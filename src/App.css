@@ -15,12 +15,13 @@
     width: 500px;
 }
 .clear-all{
-    margin-top: 20px;
+    margin:30px auto;
     color: white;
     padding: 10px;
     background-color: red;
     border-radius: 50px;
     transition: all 500ms ease-in-out;
+    width:100px;
 }
 
 @media (max-width:500px){
