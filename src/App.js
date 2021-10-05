@@ -61,8 +61,14 @@ function App() {
     setEditItem(task.text);
   }
 
+  // Clearing all list
+  const clearALL=()=>{
+    settodoItemsList([]);
+    localStorage.clear("todos")
+  }
+
   let todoContent = (
-    <div style={{ textAlign: "center", margin: "10px" }}>
+    <div style={{ textAlign: "center", margin: "40px" }}>
       No tasks found. Maybe add one? ✍
     </div>
   );
@@ -83,7 +89,12 @@ function App() {
         ></Input>
         {todoContent}
       </div>
-      <div className="input"></div>
+      <div className="clear-all" onClick={clearALL}>
+        <span>
+          Clear All{" "}
+          <i className="fas fa-trash-alt delete" ></i>
+        </span>
+      </div>
     </div>
   );
 }
