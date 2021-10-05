@@ -88,12 +88,11 @@ function App() {
           }}
         ></Input>
         {todoContent}
-      </div>
-      <div className="clear-all" onClick={clearALL}>
-        <span>
-          Clear All{" "}
-          <i className="fas fa-trash-alt delete" ></i>
-        </span>
+        <div className="clear-all" onClick={clearALL}>
+          <span>
+            Clear All <i className="fas fa-trash-alt delete"></i>
+          </span>
+        </div>
       </div>
     </div>
   );
